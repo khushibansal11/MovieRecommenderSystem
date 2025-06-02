@@ -2,8 +2,15 @@ import streamlit as st
 import pickle
 import requests
 import pandas as pd
+import gdown
+import os
 
 st.title("Movie Recommender System")
+# Download only if not already downloaded
+if not os.path.exists("similarity.pkl"):
+    url = "https://drive.google.com/uc?id=1PJ_GIst-KNMZ7wuv3z7fkxDvBWxouF6c"
+    gdown.download(url, "similarity.pkl", quiet=False)
+    
 movies_dataset=pickle.load(open('movie_list.pkl','rb'))
 similarity=pickle.load(open('similarity.pkl','rb'))
 
