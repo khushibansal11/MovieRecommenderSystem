@@ -2,6 +2,8 @@
 
 A simple content-based movie recommendation app built using **Python**, **Streamlit**, and **TMDb API**. Given a movie name, it suggests 5 similar movies along with their posters.
 
+Live demo: https://movierecommendersystemwebsite.streamlit.app/
+
 ![App Screenshot](screenshot.jpg)
 
 ---
